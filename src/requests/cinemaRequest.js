@@ -1,5 +1,6 @@
-import api from "./Api-key";
 import axios from "axios";
+
+const api = process.env.API
 
 const cinemaRequest = (cinemaId) => {
   return axios

@@ -1,5 +1,5 @@
 import axios from "axios";
-import api from "./Api-key";
+const api = process.env.API
 
 const searchRequest = (search, adult = false, page = 1) => {
   return axios
