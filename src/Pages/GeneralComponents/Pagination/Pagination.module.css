@@ -1,0 +1,19 @@
+.pageNav {
+  width: 100%;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.pagination {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.pages {
+  font-family: "Pacifico", cursive;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}

@@ -1,0 +1,105 @@
+.hero {
+  padding: 6rem 0 2rem;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.row {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row div {
+  margin: 0 0.5rem;
+}
+
+.poster {
+  height: 100%;
+  width: 400px;
+  object-fit: cover;
+}
+
+.title {
+  font-family: Tahoma, Arial, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.watchList {
+  display: inline-flex;
+  width: 2rem;
+  margin-left: 0.5rem;
+  padding: 3px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 7px;
+}
+
+.originalTitle {
+  display: inline-block;
+  border: 3px rgba(255, 255, 255, 0.9) solid;
+  border-radius: 10px;
+  padding: 5px 10px;
+  opacity: 0.9;
+}
+
+.adult {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.tagline {
+  padding-top: 2rem;
+  font-style: italic;
+  opacity: 0.8;
+  padding-bottom: 0.5rem;
+}
+
+.backdropPath {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background: rgb(219, 219, 219);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.7) 38%,
+    rgba(0, 0, 0, 0.85) 58%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 9rem;
+    min-height: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .poster {
+    display: none;
+    width: 0;
+  }
+  .aboutRow {
+  }
+}

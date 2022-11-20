@@ -1,0 +1,92 @@
+.about {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 7rem;
+}
+
+.aboutRow {
+  padding-bottom: 2rem;
+}
+
+.title {
+  text-align: right;
+  font-size: 2rem;
+  margin: 0 10rem 2rem 0;
+}
+
+.row {
+  margin: 0.7rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutTitle {
+  margin-right: 1rem;
+  opacity: 0.8;
+}
+
+.value {
+}
+
+.a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+/*---About Companies-------------------------*/
+.aboutCompanies {
+  padding: 1rem 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.companyName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bold;
+  color: #000;
+  font-style: italic;
+  text-align: center;
+}
+
+.companyTitle {
+  color: #000;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.aboutCompanyRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  text-align: center;
+  flex: 1 1 auto;
+  margin: 1rem;
+}
+
+.company img {
+  padding: 1rem;
+  max-width: 8rem;
+  max-height: 8rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+}
+
+/*---Media-----------------------------------*/
+
+@media (max-width: 1024px) {
+  .title {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  .row {
+    margin: 0.7rem 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+.cinema {
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+  color: white;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+}

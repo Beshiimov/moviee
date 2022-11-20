@@ -1,0 +1,124 @@
+.nav {
+  font-family: "Pacifico", cursive;
+  min-height: 500px;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: calc(50px + 15 * (100vw / 2000));
+  background-color: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.li {
+  position: relative;
+  margin: 15px;
+  list-style: none;
+}
+
+.li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3rem;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.li .icon {
+  box-sizing: content-box;
+}
+
+.li a[class="active"] {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.li a:hover {
+  background: rgba(31, 31, 31, 0.51);
+}
+
+.li a path {
+  transition: all 0.3s ease;
+}
+
+.li a[class="active"] path {
+  fill: #ff158b;
+}
+
+.profile {
+  position: relative;
+  bottom: 10px;
+}
+
+.TMDB {
+  padding: 0 10px;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 30px;
+}
+
+/*---Media--------------------------------*/
+
+@media (max-width: 767px) {
+  .nav {
+    position: fixed;
+    top: initial;
+    left: 50%;
+    bottom: 0.5rem;
+    transform: translate(-50%);
+    height: 4rem;
+    min-height: fit-content;
+    width: fit-content;
+    border-radius: 12px;
+    background-color: rgba(46, 46, 46, 0.5);
+    backdrop-filter: blur(15px);
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav ul li {
+    margin: 0.5rem;
+  }
+
+  .TMDB {
+    position: relative;
+    height: 2rem;
+    width: fit-content;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  [data-title]::after {
+    content: attr(data-title);
+    position: absolute;
+    width: fit-content;
+    left: 2em;
+    right: 0;
+    top: 0;
+    background: rgb(255, 21, 139);
+    border-radius: 10px;
+    color: #fff;
+    padding: 0.5em;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  [data-title]:hover::after {
+    opacity: 1;
+    left: 2.5em;
+  }
+}
