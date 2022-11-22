@@ -1,5 +1,5 @@
 import axios from "axios";
-const api = process.env.API
+import api from "./api"
 
 const homePageRequest = (adult = false, page = 1) => {
   return axios
